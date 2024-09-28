@@ -4,7 +4,7 @@
 name = "albucore"
 version = "0.0.17"
 description = "A high-performance image processing library designed to optimize and extend the Albumentations library with specialized functions for advanced image transformations. Perfect for developers working in computer vision who require efficient and scalable image augmentation."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "albucore-0.0.17-py3-none-any.whl", hash = "sha256:751a6d219a0b5217b44168d5fae90c27eadfa5bc381cbb7cc74536e90aeeac5b"},
@@ -20,7 +20,7 @@ typing-extensions = {version = ">=4.9.0", markers = "python_version < \"3.10\""}
 name = "albumentations"
 version = "1.4.16"
 description = "An efficient library for image augmentation, providing extensive transformations to support machine learning and computer vision tasks."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "albumentations-1.4.16-py3-none-any.whl", hash = "sha256:a8e90f8d1500e82abf46dfa10f67a8662b335fbc90fccfaeb16a7d30c764b8db"},
@@ -249,7 +249,7 @@ files = [
 name = "eval-type-backport"
 version = "0.2.0"
 description = "Like `typing._eval_type`, but lets older Python versions use newer typing features."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "eval_type_backport-0.2.0-py3-none-any.whl", hash = "sha256:ac2f73d30d40c5a30a80b8739a789d6bb5e49fdffa66d7912667e2015d9c9933"},
@@ -346,7 +346,7 @@ tqdm = ["tqdm"]
 name = "imageio"
 version = "2.35.1"
 description = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "imageio-2.35.1-py3-none-any.whl", hash = "sha256:6eb2e5244e7a16b85c10b5c2fe0f7bf961b40fcb9f1a9fd1bd1d2c2f8fb3cd65"},
@@ -596,7 +596,7 @@ files = [
 name = "lazy-loader"
 version = "0.4"
 description = "Makes it easy to load subpackages and functions on demand."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "lazy_loader-0.4-py3-none-any.whl", hash = "sha256:342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc"},
@@ -925,7 +925,7 @@ files = [
 name = "opencv-python-headless"
 version = "4.10.0.84"
 description = "Wrapper package for OpenCV python bindings."
-optional = false
+optional = true
 python-versions = ">=3.6"
 files = [
     {file = "opencv-python-headless-4.10.0.84.tar.gz", hash = "sha256:f2017c6101d7c2ef8d7bc3b414c37ff7f54d64413a1847d89970b6b7069b4e1a"},
@@ -1379,7 +1379,7 @@ six = ">=1.5"
 name = "pywavelets"
 version = "1.4.1"
 description = "PyWavelets, wavelet transform module"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "PyWavelets-1.4.1-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:d854411eb5ee9cb4bc5d0e66e3634aeb8f594210f6a1bed96dbed57ec70f181c"},
@@ -1439,7 +1439,7 @@ files = [
 name = "pyyaml"
 version = "6.0.2"
 description = "YAML parser and emitter for Python"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "PyYAML-6.0.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:0a9a2848a5b7feac301353437eb7d5957887edbf81d56e903999a75a3d743086"},
@@ -1649,7 +1649,7 @@ files = [
 name = "scikit-image"
 version = "0.21.0"
 description = "Image processing in Python"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "scikit_image-0.21.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:978ac3302252155a8556cdfe067bad2d18d5ccef4e91c2f727bc564ed75566bc"},
@@ -1699,7 +1699,7 @@ test = ["asv", "matplotlib (>=3.5)", "pooch (>=1.6.0)", "pytest (>=7.0)", "pytes
 name = "scipy"
 version = "1.10.1"
 description = "Fundamental algorithms for scientific computing in Python"
-optional = false
+optional = true
 python-versions = "<3.12,>=3.8"
 files = [
     {file = "scipy-1.10.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:e7354fd7527a4b0377ce55f286805b34e8c54b91be865bac273f527e1b839019"},
@@ -1804,7 +1804,7 @@ dev = ["hypothesis (>=6.70.0)", "pytest (>=7.1.0)"]
 name = "tifffile"
 version = "2023.7.10"
 description = "Read and write TIFF files"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "tifffile-2023.7.10-py3-none-any.whl", hash = "sha256:94dfdec321ace96abbfe872a66cfd824800c099a2db558443453eebc2c11b304"},
@@ -1996,7 +1996,10 @@ enabler = ["pytest-enabler (>=2.2)"]
 test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more-itertools", "pytest (>=6,!=8.1.*)", "pytest-ignore-flaky"]
 type = ["pytest-mypy"]
 
+[extras]
+train = ["albumentations"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8,<3.11"
-content-hash = "7c5751f4678f02f2be7f75f031343ae69d26f0a96e9a19edb44c0655c18d8a2b"
+content-hash = "acb9fc77388d1aa905d32976787afa12aef4069516fdc93993e47d7b4f257dc8"
