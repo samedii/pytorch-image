@@ -18,13 +18,13 @@ typing-extensions = {version = ">=4.9.0", markers = "python_version < \"3.10\""}
 
 [[package]]
 name = "albumentations"
-version = "1.4.16"
+version = "1.4.17"
 description = "An efficient library for image augmentation, providing extensive transformations to support machine learning and computer vision tasks."
 optional = true
 python-versions = ">=3.8"
 files = [
-    {file = "albumentations-1.4.16-py3-none-any.whl", hash = "sha256:a8e90f8d1500e82abf46dfa10f67a8662b335fbc90fccfaeb16a7d30c764b8db"},
-    {file = "albumentations-1.4.16.tar.gz", hash = "sha256:d1b959ef0a20552226b7787529a29aab239ba71ef5024974082b1cd01bf424de"},
+    {file = "albumentations-1.4.17-py3-none-any.whl", hash = "sha256:522eb0662ba53a870a6c56b17e6a30f379342d6a2049617d792aab05a5a5009c"},
+    {file = "albumentations-1.4.17.tar.gz", hash = "sha256:98eaeb13eb1335c82f78fb1600e29e4bd84014407b3eebda34637acd63ee580f"},
 ]
 
 [package.dependencies]
@@ -900,14 +900,14 @@ files = [
 
 [[package]]
 name = "nvidia-nvjitlink-cu12"
-version = "12.6.68"
+version = "12.6.77"
 description = "Nvidia JIT LTO Library"
 optional = false
 python-versions = ">=3"
 files = [
-    {file = "nvidia_nvjitlink_cu12-12.6.68-py3-none-manylinux2014_aarch64.whl", hash = "sha256:b3fd0779845f68b92063ab1393abab1ed0a23412fc520df79a8190d098b5cd6b"},
-    {file = "nvidia_nvjitlink_cu12-12.6.68-py3-none-manylinux2014_x86_64.whl", hash = "sha256:125a6c2a44e96386dda634e13d944e60b07a0402d391a070e8fb4104b34ea1ab"},
-    {file = "nvidia_nvjitlink_cu12-12.6.68-py3-none-win_amd64.whl", hash = "sha256:a55744c98d70317c5e23db14866a8cc2b733f7324509e941fc96276f9f37801d"},
+    {file = "nvidia_nvjitlink_cu12-12.6.77-py3-none-manylinux2014_aarch64.whl", hash = "sha256:3bf10d85bb1801e9c894c6e197e44dd137d2a0a9e43f8450e9ad13f2df0dd52d"},
+    {file = "nvidia_nvjitlink_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl", hash = "sha256:9ae346d16203ae4ea513be416495167a0101d33d2d14935aa9c1829a3fb45142"},
+    {file = "nvidia_nvjitlink_cu12-12.6.77-py3-none-win_amd64.whl", hash = "sha256:410718cd44962bed862a31dd0318620f6f9a8b28a6291967bcfcb446a6516771"},
 ]
 
 [[package]]
@@ -1819,13 +1819,13 @@ all = ["defusedxml", "fsspec", "imagecodecs (>=2023.1.23)", "lxml", "matplotlib"
 
 [[package]]
 name = "tomli"
-version = "2.0.1"
+version = "2.0.2"
 description = "A lil' TOML parser"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
-    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+    {file = "tomli-2.0.2-py3-none-any.whl", hash = "sha256:2ebe24485c53d303f690b0ec092806a085f07af5a5aa1464f3931eec36caaa38"},
+    {file = "tomli-2.0.2.tar.gz", hash = "sha256:d46d457a85337051c36524bc5349dd91b1877838e2979ac5ced3e710ed8a60ed"},
 ]
 
 [[package]]
@@ -2002,4 +2002,4 @@ train = ["albumentations"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8,<3.11"
-content-hash = "acb9fc77388d1aa905d32976787afa12aef4069516fdc93993e47d7b4f257dc8"
+content-hash = "ed60d0376506b9f0f963a7ab43ab46b01121c13a9c001b79f3cce7d79bc95a26"

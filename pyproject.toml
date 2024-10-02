@@ -10,9 +10,9 @@ readme = "README.md"
 python = "^3.8,<3.11"
 torch = "*"
 numpy = "*"
-pillow = "^10.4.0"
-pydantic = "^2.9.2"
-albumentations = { version = "^1.4.16", optional = true }
+pillow = "*"
+pydantic = "^2.0.0"
+albumentations = { version = "*", optional = true }
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

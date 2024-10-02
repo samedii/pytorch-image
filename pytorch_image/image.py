@@ -174,7 +174,7 @@ class Image(BaseModel):
         augmented = augmenter(image=self.numpy())
         return self.from_numpy(augmented["image"])
 
-    def map(self, func: Callable[[torch.Tensor], torch.Tensor]) -> Image:
+    def map(self, func: Callable[[pt.Tensor], pt.Tensor]) -> Image:
         """
         Apply a function to the image data.
 
@@ -201,7 +201,7 @@ class Image(BaseModel):
             dict_[key] = value
         return Image(**dict_)
 
-    def torch(self) -> torch.Tensor:
+    def torch(self) -> pt.Tensor:
         """
         Get the image data as a PyTorch tensor.
 
@@ -219,7 +219,7 @@ class Image(BaseModel):
         """
         return (self.data[0].permute(1, 2, 0).clamp(0, 1) * 255).byte().numpy()
 
-    def representation(self) -> torch.Tensor:
+    def representation(self) -> pt.Tensor:
         """
         Get a normalized representation of the image data.
 
